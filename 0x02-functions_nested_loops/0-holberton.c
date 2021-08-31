@@ -1,13 +1,21 @@
+#include "main.h"
 #include <stdio.h>
 
 /**
- * main - prints the phrase "Holeberton" on the screen
- * Return: 0 if exited properly, non-zero otherwise
-*/
-
+ *main- To stdout Holberton on the screen, followed by a new line
+ *Return:always 0
+ */
 int main(void)
 {
-	char ch = "Holebertonn\n";
-	putchar(ch);
-	return (0);
+int x = 0;
+char msg[] = "_putchar\n";
+char c;
+while (x <= 8)
+{
+c = msg[x];
+_putchar(c);
+x++;
 }
+return (0);
+}
+
