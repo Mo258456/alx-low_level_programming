@@ -1,5 +1,4 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
  *main- To stdout Holberton on the screen, followed by a new line
