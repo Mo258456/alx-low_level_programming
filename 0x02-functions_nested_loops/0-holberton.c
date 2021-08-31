@@ -8,6 +8,6 @@
 int main(void)
 {
 	char ch = "Holeberton";
-	putchar(ch);
+	putchar(ch\n);
 	return (0);
 }
