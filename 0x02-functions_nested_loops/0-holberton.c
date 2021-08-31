@@ -7,6 +7,7 @@
 
 int main(void)
 {
-	puts("Holberton \n");
+	char ch = "Holeberton";
+	putchar(ch);
 	return (0);
 }
