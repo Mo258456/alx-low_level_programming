@@ -1,8 +1,9 @@
 #include "main.h"
 
 /**
- * mul - A function that multiplies two int 
- *a * b then gives c as product.
+ * mul - multiplies two integers
+ * @a: int to be multiplied to b
+ * @b: int to be multiplied to a
  * Return: the result of the operation
  */
 int mul(int a, int b)
