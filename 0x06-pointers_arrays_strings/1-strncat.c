@@ -4,7 +4,7 @@
  * _strncat - links n bytes from a string to another
  * @dest: destination of the string
  * @src: source of the string
- * @n: number of bytes of str to link 
+ * @n: number of bytes of str to link
  *
  * Return: a pointer to the resulting string dest
  */
