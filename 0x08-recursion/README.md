@@ -1,10 +1,10 @@
-file 0:a function that prints a string, followed by a new line.
-file 1:a function that prints a string in reverse.
-file 2:a function that returns the length of a string.
-file 3:a function that returns the factorial of a given number.
-file 4:a function that returns the value of x raised to the power of y.
-file 5:a function that returns the natural square root of a number.
-file 6:a function that returns 1 if the input integer is a prime number, otherwise return 0.
-file 100:a function that returns 1 if a string is a palindrome and 0 if not.
-file 101:a function that compares two strings and returns 1 if the strings can be considered identical, otherwise return 0.
-main.h file is the header file that contains the function prototypes used in this project.
+0-puts_recuusion.c: This function prints a string, followed by a new line.
+1-print_rev_recursion.c: This function prints a string in a reverse manner.
+2-strlen_recursion.c: This function returns the length of a string.
+3-factorial.c: This function returns the factorial of a given number.
+4-pow_recursion.c: This function returns the value of x raised to the power of y.
+5-sqrt_recursion.c: This function returns the natural square root of a number.
+6-is_prime_number.c: This function returns 1 if the input integer is a prime number, if not it will return 0.
+100-is_palindrome.c: This is a function that returns 1 if a string is a palindrome and 0 if not.
+101-wildcmp.c: This function compares two strings and returns 1 if the string can be considered identical, if not it will return 0.
+main.h: This is the header file that contains the function prototypes used in this project directory.
