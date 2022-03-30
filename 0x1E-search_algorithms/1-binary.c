@@ -1,43 +1,44 @@
-#include "search_algos.h"
-/**
- * binary_search - using binary search algorithm, searches through an int
- * array for a value
- * @array: pointer to the first element of the array to search in
- * @size: the number of elements in the array
- * @value: the value to search for in @array
- *
- * Return: The first index where value is located, -1 otherwise
+/*
+ * File: 1-binary.c
+ * Auth: Brennan D Baraban
  */
+
+#include "search_algos.h"
+
+/**
+  * binary_search - Searches for a value in a sorted array
+  *                 of integers using binary search.
+  * @array: A pointer to the first element of the array to search.
+  * @size: The number of elements in the array.
+  * @value: The value to search for.
+  *
+  * Return: If the value is not present or the array is NULL, -1.
+  *         Otherwise, the index where the value is located.
+  *
+  * Description: Prints the [sub]array being searched after each change.
+  */
 int binary_search(int *array, size_t size, int value)
 {
-    int idx = -1;
-    size_t i;
+	size_t i, left, right;
 
-    printf("Searching in array: ");
+	if (array == NULL)
+		return (-1);
 
-    for (i = 0; i < size; i++)
-    {
-        printf("%i", array[i]);
+	for (left = 0, right = size - 1; right >= left;)
+	{
+		printf("Searching in array: ");
+		for (i = left; i < right; i++)
+			printf("%d, ", array[i]);
+		printf("%d\n", array[i]);
 
-        if (i != size - 1)
-            printf(", ");
-    }
-    printf("\n");
+		i = left + (right - left) / 2;
+		if (array[i] == value)
+			return (i);
+		if (array[i] > value)
+			right = i - 1;
+		else
+			left = i + 1;
+	}
 
-    if (value == array[size / 2])
-    {
-        idx = size / 2;
-    }
-    else if (value < array[size / 2])
-    {
-        printf("Going  left: ");
-        idx = binary_search(array, size / 2, value);
-    }
-    else if (value > array[size / 2])
-    {
-        printf("Going right: ");
-        idx = size - size / 2 - 1 + binary_search(array + (int)size / 2, size - size / 2, value);
-    }
-
-    return idx;
+	return (-1);
 }
